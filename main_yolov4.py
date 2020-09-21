@@ -3,10 +3,10 @@ import argparse
 import numpy as np
 
 # Initialize the parameters
-confThreshold = 0.25  # Confidence threshold
+confThreshold = 0.1  # Confidence threshold
 nmsThreshold = 0.4  # Non-maximum suppression threshold
-inpWidth = 416  # Width of network's input image
-inpHeight = 416  # Height of network's input image
+inpWidth = 608  # Width of network's input image  yolov4: 608, yolov4-tiny: 416
+inpHeight = 608  # Height of network's input image
 
 # Give the configuration and weight files for the model and load the network using them.
 modelConfiguration = "coco_model/yolov4.cfg"
